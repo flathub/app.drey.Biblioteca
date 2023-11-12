@@ -1,6 +1,6 @@
 {
   "id": "app.drey.Biblioteca",
-  "runtime": "org.gnome.Sdk",
+  "runtime": "org.gnome.Platform",
   "runtime-version": "45",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": ["org.gnome.Sdk.Docs"],
@@ -20,10 +20,6 @@
     "/share/man",
     "/share/pkgconfig",
     "/share/installed-tests",
-    "/etc",
-    "/bin/vte-2.91-gtk4",
-    "/lib/systemd",
-    "/libexec/vte-urlencode-cwd",
     "*.la",
     "*.a"
   ],
@@ -42,8 +38,8 @@
         {
           "type": "git",
           "url": "https://github.com/workbenchdev/Biblioteca.git",
-          "commit": "ceedeaec14ea621e373890bb2030f08b38ddf0bd",
-          "tag": "v1.0"
+          "commit": "5e6eabe74f92b8db67130ca2f2fcfa703e039a14",
+          "tag": "v1.1"
         }
       ],
       "post-install": [
