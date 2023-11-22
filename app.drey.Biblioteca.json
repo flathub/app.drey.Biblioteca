@@ -38,13 +38,15 @@
         {
           "type": "git",
           "url": "https://github.com/workbenchdev/Biblioteca.git",
-          "commit": "5e6eabe74f92b8db67130ca2f2fcfa703e039a14",
-          "tag": "v1.1"
+          "commit": "11d163f930d99b44f004212d509e5fbb1acc303f",
+          "tag": "v1.2"
         }
       ],
       "post-install": [
         "cp -a /usr/share/runtime/docs/doc/. /app/share/doc/",
-        "cp -a /usr/share/runtime/docs/gtk-doc/html/ /app/share/doc/"
+        "cp -a /usr/share/runtime/docs/gtk-doc/html/webkitgtk-6.0 /app/share/doc",
+        "cp -a /usr/share/runtime/docs/gtk-doc/html/javascriptcoregtk-6.0 /app/share/doc",
+        "cp -a /usr/share/runtime/docs/gtk-doc/html/webkitgtk-web-process-extension-6.0 /app/share/doc"
       ]
     }
   ]
