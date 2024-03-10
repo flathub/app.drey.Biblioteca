@@ -31,6 +31,7 @@
     "modules/libportal.json",
     "modules/libspelling.json",
     "modules/blueprint-compiler.json",
+    "modules/sdk-docs.json",
     {
       "name": "Biblioteca",
       "buildsystem": "meson",
@@ -39,11 +40,10 @@
         {
           "type": "git",
           "url": "https://github.com/workbenchdev/Biblioteca.git",
-          "commit": "78f7e03a6bc8ee4d5cf1a8e0e2d6dd95adfec151",
+          "commit": "329c017665fdea30eac5174b507e6bb3c8bc567a",
           "tag": "v1.3beta"
         }
-      ],
-      "post-install": ["cp -a /usr/share/runtime/docs/doc/. /app/share/doc/"]
+      ]
     }
   ]
 }
