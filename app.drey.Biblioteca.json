@@ -1,11 +1,13 @@
 {
   "id": "app.drey.Biblioteca",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": ["org.gnome.Sdk.Docs"],
   "command": "biblioteca",
+  "separate-locales": false,
   "finish-args": [
+    "--share=network",
     "--share=ipc",
     "--socket=fallback-x11",
     "--socket=wayland",
@@ -30,6 +32,7 @@
     "modules/libportal.json",
     "modules/libspelling.json",
     "modules/blueprint-compiler.json",
+    "modules/sdk-docs.json",
     {
       "name": "Biblioteca",
       "buildsystem": "meson",
@@ -38,15 +41,9 @@
         {
           "type": "git",
           "url": "https://github.com/workbenchdev/Biblioteca.git",
-          "commit": "11d163f930d99b44f004212d509e5fbb1acc303f",
-          "tag": "v1.2"
+          "commit": "03c9c9c0034602b889cc5f2f26536b58accd7ef4",
+          "tag": "v1.3"
         }
-      ],
-      "post-install": [
-        "cp -a /usr/share/runtime/docs/doc/. /app/share/doc/",
-        "cp -a /usr/share/runtime/docs/gtk-doc/html/webkitgtk-6.0 /app/share/doc",
-        "cp -a /usr/share/runtime/docs/gtk-doc/html/javascriptcoregtk-6.0 /app/share/doc",
-        "cp -a /usr/share/runtime/docs/gtk-doc/html/webkitgtk-web-process-extension-6.0 /app/share/doc"
       ]
     }
   ]
