@@ -41,7 +41,7 @@
         {
           "type": "git",
           "url": "https://github.com/workbenchdev/Biblioteca.git",
-          "commit": "4f65862fdaa5b1eff96698e301dc6cb121a035b7",
+          "commit": "32411eb48ef17205c76c781aeaee0219c21af609",
           "tag": "v1.3"
         }
       ]
