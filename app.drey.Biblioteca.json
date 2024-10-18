@@ -1,7 +1,7 @@
 {
   "id": "app.drey.Biblioteca",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "47",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": ["org.gnome.Sdk.Docs"],
   "command": "biblioteca",
@@ -32,19 +32,23 @@
     "modules/libportal.json",
     "modules/libspelling.json",
     "modules/blueprint-compiler.json",
+    "modules/gom.json",
     "modules/sdk-docs.json",
     {
       "name": "Biblioteca",
       "buildsystem": "meson",
-      "config-opts": ["-Dprofile=default"],
+      "config-opts": ["-Dprofile=default", "--libdir=lib"],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/workbenchdev/Biblioteca.git",
-          "commit": "022ede135351cbff519e456ab38b6624e3938e0b",
-          "tag": "v1.4"
+          "commit": "288fd137726ce196a628b58385af466d435b4b79",
+          "tag": "v1.5"
         }
       ]
     }
-  ]
+  ],
+  "build-options": {
+    "env": {}
+  }
 }
