@@ -1,7 +1,7 @@
 {
   "id": "app.drey.Biblioteca",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "47",
+  "runtime-version": "48",
   "sdk": "org.gnome.Sdk",
   "sdk-extensions": ["org.gnome.Sdk.Docs"],
   "command": "biblioteca",
@@ -42,13 +42,10 @@
         {
           "type": "git",
           "url": "https://github.com/workbenchdev/Biblioteca.git",
-          "commit": "288fd137726ce196a628b58385af466d435b4b79",
-          "tag": "v1.5"
+          "commit": "85086d9763e39b8f7bf08e81e0ee06fa572edc95",
+          "tag": "v1.6"
         }
       ]
     }
-  ],
-  "build-options": {
-    "env": {}
-  }
+  ]
 }
